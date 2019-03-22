@@ -1,7 +1,7 @@
 import React from 'react';
 import PostNewForm from './PostNewForm';
 import PostTable from './PostTable';
-import Pagination from './Pagination';
+import Pagination from "react-js-pagination";
 import Select from 'react-select';
 
 class BodyPostApp extends React.Component {
@@ -13,14 +13,35 @@ constructor(props) {
       selectedOption: {},
       posts: [],
       categories: [],
-      page: 1,
-      pages: 0
+      activePage: 1,
+      itemsCountPerPage: 1,
+      totalItemsCount: 1
     };
     this.handleAdd = this.handleAdd.bind(this);
     this.handleDeleteRecord = this.handleDeleteRecord.bind(this);
     this.handleUpdateRecord = this.handleUpdateRecord.bind(this);
-    this.handleChangePage = this.handleChangePage.bind(this);
     this.loadData = this.loadData.bind(this);
+    this.handlePageChange = this.handlePageChange.bind(this);
+  }
+  
+  handlePageChange(pageNumber) {
+    var self = this;
+    $.ajax({
+      url: '/posts/',
+      data: { page: pageNumber },
+      success: function(data) {
+      	self.setState({
+      		 posts: data.page_posts, 
+      		 activePage: data.page,
+      		itemsCountPerPage: data.per_page, 
+      		totalItemsCount: data.pages 
+      		});
+      },
+      error: function(xhr, status, error) {
+        alert('Cannot get data from POSTS Controller: ', error);
+      }
+});
+    
   }
 
 handleDropDownChange = (selectedOption) => {
@@ -62,12 +83,6 @@ handleAdd(post)
      this.setState({ posts: posts });
 }
 
-handleChangePage(data) {
-	this.setState({ posts : data.page_posts });
-	this.setState({ page: data.page });
-	this.setState({ pages: data.pages });
-}
-
 componentDidMount(){
     /*fetch('/posts.json')
       .then((response) => {return response.json()})
@@ -76,10 +91,15 @@ componentDidMount(){
     var self = this;
     $.ajax({
       url: '/posts/',
-      data: { page: self.state.page },
+      data: { page: self.state.activePage },
       success: function(data) {
       	self.setState({intialPosts: data.posts});
-        self.setState({ posts: data.page_posts, pages: parseInt(data.pages), page: parseInt(data.page) });
+        self.setState({
+      		 posts: data.page_posts, 
+      		 activePage: data.page,
+      		itemsCountPerPage: data.per_page, 
+      		totalItemsCount: data.pages 
+      		});
       },
       error: function(xhr, status, error) {
         alert('Cannot get data from POSTS Controller: ', error);
@@ -143,11 +163,23 @@ render(){
       <div className="row">
       <div className="col-md-12">
          <PostTable posts={this.state.posts} categories={this.state.categories} handleDeleteRecord={this.handleDeleteRecord} handleUpdateRecord={this.handleUpdateRecord}/>
-         {this.state.posts.length > 0 && <Pagination page={this.state.page}
-                        pages={this.state.pages}
-handleChangePage={this.handleChangePage} />}
+       </div>
+      </div>
+      
+      <div className="row">
+      <div className="col-md-12 d-flex justify-content-center">
+        <Pagination
+          activePage={this.state.activePage}
+          itemsCountPerPage={this.state.itemsCountPerPage}
+          totalItemsCount={this.state.totalItemsCount}
+          pageRangeDisplayed={5}
+          onChange={this.handlePageChange}
+          itemClass='page-item'
+          linkClass='page-link'
+        />
       </div>
       </div>
+      
      </div>
     )
   }

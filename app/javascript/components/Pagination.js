@@ -66,3 +66,7 @@ class Pagination extends React.Component {
 };
 
 export default Pagination;
+
+{this.state.posts.length > 0 && <Pagination page={this.state.page}
+                        pages={this.state.pages}
+handleChangePage={this.handleChangePage} />}

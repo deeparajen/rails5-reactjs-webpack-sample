@@ -9,7 +9,7 @@ class PostsController < ApplicationController
        page_posts: @page_posts,
        per_page: @page_posts.per_page,
       page: @page_posts.current_page,
-      pages: @page_posts.total_pages
+      pages: @posts.length
      } 
   end
   
