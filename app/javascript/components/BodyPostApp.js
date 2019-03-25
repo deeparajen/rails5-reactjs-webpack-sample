@@ -102,7 +102,7 @@ componentDidMount(){
       		itemsCountPerPage: data.per_page, 
       		totalItemsCount: data.pages 
       		})
-      }.bind(this),
+      },
       error: function(xhr, status, error) {
         alert('Cannot get data from POSTS Controller: ', error);
       }

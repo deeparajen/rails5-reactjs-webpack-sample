@@ -70,7 +70,7 @@ class PostNewForm extends React.Component{
 				}
 			 });
 			
-		}.bind(this),
+		},
 		
         error: function(xhr, status, error) {
         	
