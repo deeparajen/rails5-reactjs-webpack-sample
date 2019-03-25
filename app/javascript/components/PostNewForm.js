@@ -1,4 +1,6 @@
 import React from 'react';
+import './custom.css'
+
 class PostNewForm extends React.Component{
     constructor(props)
     {
@@ -8,27 +10,51 @@ class PostNewForm extends React.Component{
       title: '',
       author: '',
       description: '',
-      category_id: ''
+      category_id: '',
+      errors: []
     	}
     	this.handleAdd = this.handleAdd.bind(this);
-    	this.handleChange = this.handleChange.bind(this);
     }  
     
-    handleChange(e)
+    validate()
     {
-    	e.preventDefault();
-    	var input_name = e.target.name;
-       var value = e.target.value;
-       this.setState({ [input_name] : value });
+    	const errors = [];
+
+  if (this.state.name.length === 0) {
+    errors.push("Name can't be empty!!");
+  }
+
+  if (this.state.title.length === 0) {
+    errors.push("title can't be empty!!");
+  }
+  if (this.state.author.length === 0) {
+    errors.push("author can't be empty!!");
+  }
+  if (this.state.description.length === 0) {
+    errors.push("description can't be empty!!");
+  }
+  if (this.state.category_id === '') {
+    errors.push("Please select category!!");
+  }
+  
+
+  return errors;
     }
-   
+       
     handleAdd(e)
     {
     	
     	e.preventDefault();
+    	let errors = this.validate();
+    	if (errors.length > 0) {
+           this.setState({ errors });
+           var x = document.getElementById("error_explanation");
+	       x.style.display= "block";
+           return;
+        }
     	var self = this;
     	$.ajax({
-    		url: '/posts',
+    		url: '/api/v1/posts',
         method: 'POST',
 		data: { post: self.state },
 		success: function(data) {
@@ -39,36 +65,53 @@ class PostNewForm extends React.Component{
 				title: '',
 				author: '',
 				description: '',
-				category_id: ''
+				category_id: '',
+				errors: []
 				}
 			 });
 			
-		}
+		}.bind(this),
+		
+        error: function(xhr, status, error) {
+        	
+          alert('Cannot add a new record: ', error);
+        }
     	}) // ajax end
     }
   
     render()
     {
-        return(
+    	const { errors } = this.state;
+    	
+    	return(
+        	
             <div>
+            <div id="error_explanation" style={errors.length > 0 ? {} : { display: 'none' }}>
+              <ul>
+              {errors.map(error => (
+          <li key={error}>{error}</li>
+             ))}
+             </ul>
+            </div>
                 <form className="form-inline" onSubmit={this.handleAdd}>
-		 <div className="form-group">
-		 <input type="text"
+		      <div className="form-group">
+		        <input type="text"
                  className="form-control"
                  name="name"
                  placeholder="Name"
                  value={this.state.name} 
-                 onChange={this.handleChange}
+                 onChange={evt => this.setState({ name: evt.target.value })}
                  />
-		 
+		 		
 		 </div>
+		
 		 <div className="form-group">
 		 <input type="text"
                  className="form-control"
                  name="title"
                  placeholder="Title"
                  value={this.state.title} 
-                 onChange={this.handleChange}
+                 onChange={evt => this.setState({ title: evt.target.value })}
                  />
 		 
 		 </div>
@@ -78,12 +121,17 @@ class PostNewForm extends React.Component{
                  name="author"
                  placeholder="Author"
                  value={this.state.author} 
-                 onChange={this.handleChange}
+                 onChange={evt => this.setState({ author: evt.target.value })}
                  />
 		 
 		 </div>
 		 <div className="form-group">
-		 <select value={this.state.category_id} className="form-control" onChange={this.handleChange} name="category_id">
+		 <select 
+		 value={this.state.category_id} 
+		 className="form-control" 
+		 onChange={evt => this.setState({ category_id: evt.target.value })}
+		 name="category_id"
+		 >
 		 <option slected="selected">Please Select Option</option>
 		 {this.props.categories.map((category) =>  (
 		 	<option value={category.id} key={category.name}>{category.name}</option>
@@ -98,7 +146,7 @@ class PostNewForm extends React.Component{
                  name="description"
                  placeholder="Description"
                  value={this.state.description} 
-                 onChange={this.handleChange}
+                 onChange={evt => this.setState({ description: evt.target.value })}
                  />
 		 
 		 </div>

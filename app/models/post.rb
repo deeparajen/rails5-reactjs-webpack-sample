@@ -2,6 +2,9 @@ class Post < ApplicationRecord
   before_save :post_published
   before_update :post_last_edited
   
+  validates :name, presence: true, uniqueness: true
+  
+  
   belongs_to :category
   
   def post_published

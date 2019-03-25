@@ -22,12 +22,14 @@ constructor(props) {
     this.handleUpdateRecord = this.handleUpdateRecord.bind(this);
     this.loadData = this.loadData.bind(this);
     this.handlePageChange = this.handlePageChange.bind(this);
-  }
+   }
+  
+  
   
   handlePageChange(pageNumber) {
     var self = this;
     $.ajax({
-      url: '/posts/',
+      url: '/api/v1/posts/',
       data: { page: pageNumber },
       success: function(data) {
       	self.setState({
@@ -45,26 +47,26 @@ constructor(props) {
   }
 
 handleDropDownChange = (selectedOption) => {
-    this.setState({ selectedOption: selectedOption});
-    console.log(`Option selected:`, selectedOption["value"]);
+	var x = document.getElementById("error_explanation");
+	x.style.display= "none";
+	this.setState({ selectedOption: selectedOption});
     var self = this;
     
     $.ajax({
-    	url: '/posts/search?query='+selectedOption["value"],
+    	url: '/api/v1/posts/search?query='+selectedOption["value"],
         method: 'GET',
 		data: { posts: self.state },
 		success: function(data) {
 			self.setState({ posts: data });
-		}
+	}
     });
   }
 
-handleUpdateRecord(old_post, post)
-{
-	var posts = this.state.posts.slice();
-    var index = posts.indexOf(old_post);
-    posts.splice(index, 1, post);
-    this.setState({ posts: posts });
+handleUpdateRecord(post) {
+  let localPosts = JSON.parse(JSON.stringify(this.state.posts));
+  let index =localPosts.findIndex(p=>p.id===post.id);
+  localPosts[index] = post;
+  this.setState({posts: localPosts});
 }
 
 handleDeleteRecord(post_id)
@@ -90,7 +92,7 @@ componentDidMount(){
      
     var self = this;
     $.ajax({
-      url: '/posts/',
+      url: '/api/v1/posts/',
       data: { page: self.state.activePage },
       success: function(data) {
       	self.setState({intialPosts: data.posts});
@@ -99,14 +101,14 @@ componentDidMount(){
       		 activePage: data.page,
       		itemsCountPerPage: data.per_page, 
       		totalItemsCount: data.pages 
-      		});
-      },
+      		})
+      }.bind(this),
       error: function(xhr, status, error) {
         alert('Cannot get data from POSTS Controller: ', error);
       }
 });
       
-    fetch('/categories.json')
+    fetch('/api/v1/categories.json')
       .then((response) => {return response.json()})
       .then((data) => {this.setState({ categories: data }) });
       
@@ -155,7 +157,7 @@ render(){
         
         <div className="row">
       <div className="col-md-12">
-         <PostNewForm handleAdd={this.handleAdd} categories = {this.state.categories}/>
+         <PostNewForm handleAdd={this.handleAdd} categories = {this.state.categories} />
       </div>
       <div className="col-md-2 col-sm-2 col-xs-2">&nbsp;</div>
       </div>

@@ -1,0 +1,19 @@
+.btn-toolbar {
+	display: flex;
+}
+
+.input {
+	display: flex;
+}
+
+.alert-danger {
+	width: 50%;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
