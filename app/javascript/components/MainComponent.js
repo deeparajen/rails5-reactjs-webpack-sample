@@ -8,7 +8,7 @@ export default class MainComponent extends React.Component {
     return (
       <div className="container">
        <div className="jumbotron">
-          <h4>ReactJS Rails WebPack Application</h4>
+          <h4>Welcome to ReactJS Rails WebPack Application</h4>
        </div>
         
         <div className="row">
