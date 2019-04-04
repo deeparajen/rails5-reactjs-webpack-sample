@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.body.appendChild(document.createElement('div'));
   render(<MainComponent/>, container);
 });
+

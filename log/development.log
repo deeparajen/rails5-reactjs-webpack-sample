@@ -22116,3 +22116,1584 @@ Processing by Api::V1::PostsController#search as */*
 Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-04-04 10:30:24 +0200
+  
+PG::ConnectionBad (FATAL:  password authentication failed for user "root"
+FATAL:  password authentication failed for user "root"
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-04-04 10:32:24 +0200
+  
+Mysql2::Error (Unsupported charset: '"unicode"'):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:47:in `charset_name='
+mysql2 (0.5.2) lib/mysql2/client.rb:47:in `initialize'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-04-04 10:40:19 +0200
+  [1m[35m (16.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE `rails5_reactjs_db_n` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `rails5_reactjs_db_n` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('6006895228514723445', 0)[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+Migrating to CreatePosts (20190321223931)
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `title` varchar(255), `author` varchar(255), `description` text, `published_at` date, `last_edited_at` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190321223931_create_posts.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190321223931')[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+Migrating to CreateCategories (20190321224101)
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE `categories` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190321224101_create_categories.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190321224101')[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+Migrating to AddCategoryReferenceToPosts (20190321224249)
+  [1m[35m (37.5ms)[0m  [1m[35mALTER TABLE `posts` ADD `category_id` bigint[0m
+  ↳ db/migrate/20190321224249_add_category_reference_to_posts.rb:3
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE  INDEX `index_posts_on_category_id`  ON `posts` (`category_id`) [0m
+  ↳ db/migrate/20190321224249_add_category_reference_to_posts.rb:3
+  [1m[35m (42.7ms)[0m  [1m[35mALTER TABLE `posts` ADD CONSTRAINT `fk_rails_9b1b26f040`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  ↳ db/migrate/20190321224249_add_category_reference_to_posts.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190321224249')[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-04-04 08:41:11', '2019-04-04 08:41:11')[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6006895228514723445')[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Blog', '2019-04-04 08:42:07', '2019-04-04 08:42:07')[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Magazines', '2019-04-04 08:42:07', '2019-04-04 08:42:07')[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Forum', '2019-04-04 08:42:07', '2019-04-04 08:42:07')[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+Started GET "/" for 127.0.0.1 at 2019-04-04 10:42:48 +0200
+  [1m[35m (0.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6678ms (Views: 6658.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 10:42:56 +0200
+Processing by Api::V1::PostsController#index as */*
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 10:42:56 +0200
+  Parameters: {"page"=>"1"}
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (9.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 37ms (Views: 2.0ms | ActiveRecord: 14.2ms)
+
+
+Completed 200 OK in 34ms (Views: 18.6ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 10:43:29 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Java", "title"=>"Java 8", "author"=>"David", "description"=>"Java Programming Languages", "category_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Java' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Java', 'Java 8', 'David', 'Java Programming Languages', '2019-04-04', '2019-04-04 08:43:29', '2019-04-04 08:43:29', 1)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 59ms (Views: 1.1ms | ActiveRecord: 10.8ms)
+
+
+Started PUT "/api/v1/posts/1" for 127.0.0.1 at 2019-04-04 10:46:23 +0200
+Processing by Api::V1::PostsController#update as */*
+  Parameters: {"post"=>{"name"=>"Java", "description"=>"Java Programming Languages", "title"=>"Java 8", "author"=>"David", "category_id"=>"1"}, "id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mPost Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Java' AND `posts`.`id` != 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE `posts` SET `last_edited_at` = '2019-04-04' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+Completed 200 OK in 19ms (Views: 1.0ms | ActiveRecord: 7.0ms)
+
+
+Started PUT "/api/v1/posts/1" for 127.0.0.1 at 2019-04-04 10:46:35 +0200
+Processing by Api::V1::PostsController#update as */*
+  Parameters: {"post"=>{"name"=>"Java", "description"=>"Java Programming Languages", "title"=>"Java 8", "author"=>"David", "category_id"=>"1"}, "id"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mPost Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Java' AND `posts`.`id` != 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 10:46:47 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 95ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 10:46:48 +0200
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 10:46:48 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mCategory Load (4.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 23ms (Views: 10.1ms | ActiveRecord: 10.0ms)
+
+
+Completed 200 OK in 21ms (Views: 12.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/posts/search?query=Java&posts%5BintialPosts%5D%5B0%5D%5Bid%5D=1&posts%5BintialPosts%5D%5B0%5D%5Bname%5D=Java&posts%5BintialPosts%5D%5B0%5D%5Btitle%5D=Java+8&posts%5BintialPosts%5D%5B0%5D%5Bauthor%5D=David&posts%5BintialPosts%5D%5B0%5D%5Bdescription%5D=Java+Programming+Languages&posts%5BintialPosts%5D%5B0%5D%5Bpublished_at%5D=2019-04-04&posts%5BintialPosts%5D%5B0%5D%5Blast_edited_at%5D=2019-04-04&posts%5BintialPosts%5D%5B0%5D%5Bcreated_at%5D=2019-04-04T08%3A43%3A29.000Z&posts%5BintialPosts%5D%5B0%5D%5Bupdated_at%5D=2019-04-04T08%3A43%3A29.000Z&posts%5BintialPosts%5D%5B0%5D%5Bcategory_id%5D=1&posts%5Bposts%5D%5B0%5D%5Bid%5D=1&posts%5Bposts%5D%5B0%5D%5Bname%5D=Java&posts%5Bposts%5D%5B0%5D%5Btitle%5D=Java+8&posts%5Bposts%5D%5B0%5D%5Bauthor%5D=David&posts%5Bposts%5D%5B0%5D%5Bdescription%5D=Java+Programming+Languages&posts%5Bposts%5D%5B0%5D%5Bpublished_at%5D=2019-04-04&posts%5Bposts%5D%5B0%5D%5Blast_edited_at%5D=2019-04-04&posts%5Bposts%5D%5B0%5D%5Bcreated_at%5D=2019-04-04T08%3A43%3A29.000Z&posts%5Bposts%5D%5B0%5D%5Bupdated_at%5D=2019-04-04T08%3A43%3A29.000Z&posts%5Bposts%5D%5B0%5D%5Bcategory_id%5D=1&posts%5Bcategories%5D%5B0%5D%5Bid%5D=1&posts%5Bcategories%5D%5B0%5D%5Bname%5D=Blog&posts%5Bcategories%5D%5B0%5D%5Bcreated_at%5D=2019-04-04T08%3A42%3A07.000Z&posts%5Bcategories%5D%5B0%5D%5Bupdated_at%5D=2019-04-04T08%3A42%3A07.000Z&posts%5Bcategories%5D%5B1%5D%5Bid%5D=2&posts%5Bcategories%5D%5B1%5D%5Bname%5D=Magazines&posts%5Bcategories%5D%5B1%5D%5Bcreated_at%5D=2019-04-04T08%3A42%3A07.000Z&posts%5Bcategories%5D%5B1%5D%5Bupdated_at%5D=2019-04-04T08%3A42%3A07.000Z&posts%5Bcategories%5D%5B2%5D%5Bid%5D=3&posts%5Bcategories%5D%5B2%5D%5Bname%5D=Forum&posts%5Bcategories%5D%5B2%5D%5Bcreated_at%5D=2019-04-04T08%3A42%3A07.000Z&posts%5Bcategories%5D%5B2%5D%5Bupdated_at%5D=2019-04-04T08%3A42%3A07.000Z&posts%5BactivePage%5D=1&posts%5BitemsCountPerPage%5D=2&posts%5BtotalItemsCount%5D=1" for 127.0.0.1 at 2019-04-04 10:46:53 +0200
+Processing by Api::V1::PostsController#search as */*
+  Parameters: {"query"=>"Java", "posts"=>{"intialPosts"=>{"0"=>{"id"=>"1", "name"=>"Java", "title"=>"Java 8", "author"=>"David", "description"=>"Java Programming Languages", "published_at"=>"2019-04-04", "last_edited_at"=>"2019-04-04", "created_at"=>"2019-04-04T08:43:29.000Z", "updated_at"=>"2019-04-04T08:43:29.000Z", "category_id"=>"1"}}, "posts"=>{"0"=>{"id"=>"1", "name"=>"Java", "title"=>"Java 8", "author"=>"David", "description"=>"Java Programming Languages", "published_at"=>"2019-04-04", "last_edited_at"=>"2019-04-04", "created_at"=>"2019-04-04T08:43:29.000Z", "updated_at"=>"2019-04-04T08:43:29.000Z", "category_id"=>"1"}}, "categories"=>{"0"=>{"id"=>"1", "name"=>"Blog", "created_at"=>"2019-04-04T08:42:07.000Z", "updated_at"=>"2019-04-04T08:42:07.000Z"}, "1"=>{"id"=>"2", "name"=>"Magazines", "created_at"=>"2019-04-04T08:42:07.000Z", "updated_at"=>"2019-04-04T08:42:07.000Z"}, "2"=>{"id"=>"3", "name"=>"Forum", "created_at"=>"2019-04-04T08:42:07.000Z", "updated_at"=>"2019-04-04T08:42:07.000Z"}}, "activePage"=>"1", "itemsCountPerPage"=>"2", "totalItemsCount"=>"1"}}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE (name LIKE '%Java%')[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:43
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 10:47:16 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 78ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 10:47:17 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 10:47:17 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 10:52:01 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Python", "title"=>"Python", "author"=>"Prema", "description"=>"Python Programming", "category_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Python' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.8ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Python', 'Python', 'Prema', 'Python Programming', '2019-04-04', '2019-04-04 08:52:01', '2019-04-04 08:52:01', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 18ms (Views: 1.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:28:45 +0200
+  [1m[35m (4.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 11:28:46 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 11:28:46 +0200
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (4.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 19ms (Views: 4.7ms | ActiveRecord: 6.3ms)
+
+
+Completed 200 OK in 15ms (Views: 4.1ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:28:51 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 11:28:52 +0200
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 11:28:52 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mPost Load (11.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 32ms (Views: 5.0ms | ActiveRecord: 20.7ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 11:29:10 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"PHP", "title"=>"PHP", "author"=>"guru", "description"=>"PHP", "category_id"=>"3"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'PHP' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('PHP', 'PHP', 'guru', 'PHP', '2019-04-04', '2019-04-04 09:29:10', '2019-04-04 09:29:10', 3)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 18ms (Views: 0.9ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:30:53 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 11:30:54 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 11:30:54 +0200
+  [1m[36mPost Load (4.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (3.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 3.3ms)
+
+
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 22ms (Views: 7.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:34:18 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 11:34:20 +0200
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 11:34:20 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 19ms (Views: 5.7ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 11:34:46 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Ruby", "title"=>"Ruby", "author"=>"Ruby", "description"=>"Ruby", "category_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Ruby' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Ruby', 'Ruby', 'Ruby', 'Ruby', '2019-04-04', '2019-04-04 09:34:46', '2019-04-04 09:34:46', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:42:25 +0200
+  [1m[35m (10.1ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 106ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 11:42:27 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 11:42:27 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (6.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 22ms (Views: 7.8ms | ActiveRecord: 9.7ms)
+
+
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:43:07 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 11:43:08 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 11:43:08 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (4.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 21ms (Views: 6.2ms | ActiveRecord: 9.8ms)
+
+
+Completed 200 OK in 19ms (Views: 4.7ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:56:53 +0200
+  [1m[35m (0.8ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 11:56:54 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 11:56:54 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 11:57:23 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Ajax", "title"=>"Ajax", "author"=>"Ajax", "description"=>"Ajax", "category_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Ajax' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.4ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Ajax', 'Ajax', 'Ajax', 'Ajax', '2019-04-04', '2019-04-04 09:57:23', '2019-04-04 09:57:23', 1)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 18ms (Views: 0.9ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 11:59:59 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 78ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:00:00 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:00:00 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (4.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 11ms (Views: 3.8ms | ActiveRecord: 6.3ms)
+
+
+Completed 200 OK in 23ms (Views: 9.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:10:32 +0200
+  [1m[35m (3.4ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:12:15 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:12:23 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 93ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:13:24 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:13:25 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:13:25 +0200
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 6.2ms)
+
+
+  [1m[36mPost Load (6.9ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 28ms (Views: 6.4ms | ActiveRecord: 15.6ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:13:48 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"IOS", "title"=>"IOS", "author"=>"Richard", "description"=>"Richard", "category_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'IOS' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (3.1ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('IOS', 'IOS', 'Richard', 'Richard', '2019-04-04', '2019-04-04 10:13:48', '2019-04-04 10:13:48', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 21ms (Views: 1.1ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/api/v1/posts/?page=3" for 127.0.0.1 at 2019-04-04 12:13:55 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"3"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 4[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/posts/?page=2" for 127.0.0.1 at 2019-04-04 12:13:56 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 2[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:13:57 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:14:13 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:14:15 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:14:15 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:14:58 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"C#", "title"=>"C#", "author"=>"Bala", "description"=>"C#", "category_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'C#' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (3.1ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('C#', 'C#', 'Bala', 'C#', '2019-04-04', '2019-04-04 10:14:58', '2019-04-04 10:14:58', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 19ms (Views: 1.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/v1/posts/?page=3" for 127.0.0.1 at 2019-04-04 12:15:18 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"3"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 4[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/posts/?page=2" for 127.0.0.1 at 2019-04-04 12:15:19 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 2[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:15:20 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:19:32 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 79ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:19:34 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:19:34 +0200
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 18ms (Views: 6.4ms | ActiveRecord: 4.3ms)
+
+
+  [1m[36mCategory Load (5.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 13ms (Views: 5.7ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:19:52 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"JQuery", "title"=>"JQuery", "author"=>"JQuery", "description"=>"JQuery", "category_id"=>"2"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'JQuery' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (3.0ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('JQuery', 'JQuery', 'JQuery', 'JQuery', '2019-04-04', '2019-04-04 10:19:52', '2019-04-04 10:19:52', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 19ms (Views: 1.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:20:06 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:20:07 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:20:07 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mPost Load (5.1ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 25ms (Views: 16.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:21:24 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:21:25 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:21:25 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (6.2ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+Completed 200 OK in 23ms (Views: 8.7ms | ActiveRecord: 9.6ms)
+
+
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:21:58 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Spring Boot", "title"=>"Spring Boot", "author"=>"Spring Boot", "description"=>"Spring Boot", "category_id"=>"2"}}
+  [1m[35m (9.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Spring Boot' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (2.7ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Spring Boot', 'Spring Boot', 'Spring Boot', 'Spring Boot', '2019-04-04', '2019-04-04 10:21:58', '2019-04-04 10:21:58', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 27ms (Views: 1.0ms | ActiveRecord: 16.3ms)
+
+
+  [1m[35m (11.9ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (7.1ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 1[0m
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (0.8ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 2[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (1.3ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 3[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 4[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (20.2ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 5[0m
+  [1m[35m (74.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (7.1ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 6[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (1.0ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 7[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (0.8ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 8[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (1.0ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 9[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:23:11 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 144ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:23:13 +0200
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:23:13 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mPost Load (5.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 26ms (Views: 3.8ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:23:41 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Rails", "title"=>"Rails 5", "author"=>"Mathew", "description"=>"Rails Programming", "category_id"=>"2"}}
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (10.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Rails' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (2.4ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (7.5ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Rails', 'Rails 5', 'Mathew', 'Rails Programming', '2019-04-04', '2019-04-04 10:23:41', '2019-04-04 10:23:41', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 40ms (Views: 1.0ms | ActiveRecord: 26.0ms)
+
+
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:25:28 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 117ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:25:29 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:25:29 +0200
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (4.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 4.9ms)
+
+
+  [1m[36mPost Load (14.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 34ms (Views: 8.2ms | ActiveRecord: 16.9ms)
+
+
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (7.8ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 10[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:25:50 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:25:51 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:25:51 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:26:12 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Rails", "title"=>"Rails 5", "author"=>"Mathew", "description"=>"Rails", "category_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Rails' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.7ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Rails', 'Rails 5', 'Mathew', 'Rails', '2019-04-04', '2019-04-04 10:26:12', '2019-04-04 10:26:12', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 8.7ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:26:41 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"JQuery", "title"=>"JQuery on Ajax", "author"=>"Steve", "description"=>"JQuery on Ajax", "category_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'JQuery' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.3ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('JQuery', 'JQuery on Ajax', 'Steve', 'JQuery on Ajax', '2019-04-04', '2019-04-04 10:26:41', '2019-04-04 10:26:41', 1)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:27:09 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"PHP", "title"=>"PHP", "author"=>"Candy", "description"=>"PHP", "category_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'PHP' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (2.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('PHP', 'PHP', 'Candy', 'PHP', '2019-04-04', '2019-04-04 10:27:09', '2019-04-04 10:27:09', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:30:31 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:30:33 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:30:33 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (16.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 36ms (Views: 4.9ms | ActiveRecord: 24.8ms)
+
+
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (3.3ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 11[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (1.2ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 12[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Destroy (0.9ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 13[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` LIMIT 11[0m
+Started GET "/" for 127.0.0.1 at 2019-04-04 12:30:53 +0200
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 79ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:30:54 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 12:30:54 +0200
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:31:12 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"Rails", "title"=>"Rails 5", "author"=>"Rails", "description"=>"Rails", "category_id"=>"2"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Rails' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('Rails', 'Rails 5', 'Rails', 'Rails', '2019-04-04', '2019-04-04 10:31:12', '2019-04-04 10:31:12', 2)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 17ms (Views: 1.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:31:12 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:31:30 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"PHP", "title"=>"PHP", "author"=>"PHP", "description"=>"PHP", "category_id"=>"3"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'PHP' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (2.6ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('PHP', 'PHP', 'PHP', 'PHP', '2019-04-04', '2019-04-04 10:31:30', '2019-04-04 10:31:30', 3)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:31:30 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2019-04-04 12:31:48 +0200
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"JQuery", "title"=>"JQuery", "author"=>"JQuery", "description"=>"JQuery", "category_id"=>"3"}}
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'JQuery' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (2.6ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('JQuery', 'JQuery', 'JQuery', 'JQuery', '2019-04-04', '2019-04-04 10:31:48', '2019-04-04 10:31:48', 3)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:31:48 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/posts/?page=2" for 127.0.0.1 at 2019-04-04 12:31:51 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 2[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:31:52 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/v1/posts/16" for 127.0.0.1 at 2019-04-04 12:32:27 +0200
+Processing by Api::V1::PostsController#destroy as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:35
+  [1m[36mPost Destroy (2.9ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 16[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:35
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:35
+Completed 204 No Content in 16ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/api/v1/posts/?page=2" for 127.0.0.1 at 2019-04-04 12:32:32 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 2[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 12:32:34 +0200
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/api/v1/posts/14" for 127.0.0.1 at 2019-04-04 12:32:45 +0200
+Processing by Api::V1::PostsController#update as */*
+  Parameters: {"post"=>{"name"=>"Rails", "description"=>"Rails", "title"=>"Rails 5", "author"=>"Rails", "category_id"=>"1"}, "id"=>"14"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mPost Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'Rails' AND `posts`.`id` != 14 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mPost Update (1.8ms)[0m  [1m[33mUPDATE `posts` SET `category_id` = 1, `last_edited_at` = '2019-04-04', `updated_at` = '2019-04-04 10:32:45' WHERE `posts`.`id` = 14[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+Completed 200 OK in 21ms (Views: 0.9ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-04 13:27:33 +0200
+  [1m[35m (4.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 3516ms (Views: 3494.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 127.0.0.1 at 2019-04-04 13:27:39 +0200
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2019-04-04 13:27:39 +0200
+Processing by Api::V1::PostsController#index as */*
+  [1m[35m (12.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  Parameters: {"page"=>"1"}
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::CategoriesController#index as JSON
+  [1m[36mPost Load (20.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mCategory Load (29.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 87ms (Views: 36.1ms | ActiveRecord: 32.7ms)
+
+
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 132ms (Views: 6.9ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/" for 37.201.225.183 at 2019-04-04 13:28:42 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 128ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/categories.json" for 37.201.225.183 at 2019-04-04 13:28:48 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/api/v1/posts/?page=1" for 37.201.225.183 at 2019-04-04 13:28:48 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::CategoriesController#index as JSON
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mCategory Load (5.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 5.4ms)
+
+
+  [1m[36mPost Load (11.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 41ms (Views: 10.5ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 37.201.225.183 at 2019-04-04 13:34:34 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/rvm/gems/ruby-2.5.3@rails_5.1/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 117ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 37.201.225.183 at 2019-04-04 13:34:41 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/api/v1/categories.json" for 37.201.225.183 at 2019-04-04 13:34:41 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::CategoriesController#index as JSON
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mCategory Load (8.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  Parameters: {"page"=>"1"}
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 10.2ms)
+
+
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 18ms (Views: 5.1ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 37.201.225.183 at 2019-04-04 13:34:48 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/categories.json" for 37.201.225.183 at 2019-04-04 13:34:57 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/api/v1/posts/?page=1" for 37.201.225.183 at 2019-04-04 13:34:57 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::CategoriesController#index as JSON
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+  [1m[36mPost Load (2.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+Completed 200 OK in 24ms (Views: 16.4ms | ActiveRecord: 6.2ms)
+
+
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 38ms (Views: 14.7ms | ActiveRecord: 18.3ms)
+
+
+Started POST "/api/v1/posts" for 37.201.225.183 at 2019-04-04 13:36:21 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"jQuery", "title"=>"jQuery", "author"=>"jQuery", "description"=>"jQuery", "category_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'jQuery' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (1.3ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('jQuery', 'jQuery', 'jQuery', 'jQuery', '2019-04-04', '2019-04-04 11:36:21', '2019-04-04 11:36:21', 1)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 45ms (Views: 1.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 37.201.225.183 at 2019-04-04 13:36:21 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/posts/?page=2" for 37.201.225.183 at 2019-04-04 13:36:23 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 2[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 37.201.225.183 at 2019-04-04 13:37:00 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (4.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 4.7ms)
+
+
+Started PUT "/api/v1/posts/16" for 37.201.225.183 at 2019-04-04 13:37:04 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#update as */*
+  Parameters: {"post"=>{"name"=>"jQuery", "description"=>"jQuery", "title"=>"jQuery", "author"=>"jQuery", "category_id"=>"1"}, "id"=>"16"}
+  [1m[36mPost Load (5.1ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mPost Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'jQuery' AND `posts`.`id` != 16 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[36mPost Update (1.0ms)[0m  [1m[33mUPDATE `posts` SET `last_edited_at` = '2019-04-04' WHERE `posts`.`id` = 16[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:27
+Completed 200 OK in 29ms (Views: 1.0ms | ActiveRecord: 14.2ms)
+
+
+Started DELETE "/api/v1/posts/15" for 37.201.225.183 at 2019-04-04 13:37:10 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 15 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:47
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:35
+  [1m[36mPost Destroy (7.5ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 15[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:35
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:35
+Completed 204 No Content in 17ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/api/v1/posts/?page=2" for 37.201.225.183 at 2019-04-04 13:37:12 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mPost Load (3.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 2[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 37.201.225.183 at 2019-04-04 13:37:14 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 130.180.48.150 at 2019-04-04 13:37:21 +0200
+Cannot render console from 130.180.48.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 130.180.48.150 at 2019-04-04 13:37:26 +0200
+Cannot render console from 130.180.48.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/api/v1/categories.json" for 130.180.48.150 at 2019-04-04 13:37:26 +0200
+Cannot render console from 130.180.48.150! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::CategoriesController#index as JSON
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/api/v1/categories_controller.rb:4
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 4.0ms)
+
+
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (4.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 14ms (Views: 6.9ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/api/v1/posts" for 37.201.225.183 at 2019-04-04 13:38:47 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"post"=>{"name"=>"REST", "title"=>"REST", "author"=>"REST", "description"=>"REST", "category_id"=>"3", "errors"=>["title can't be empty!!", "author can't be empty!!", "description can't be empty!!", "Please select category!!"]}}
+Unpermitted parameter: :errors
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `posts` WHERE `posts`.`name` = BINARY 'REST' LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`name`, `title`, `author`, `description`, `published_at`, `created_at`, `updated_at`, `category_id`) VALUES ('REST', 'REST', 'REST', 'REST', '2019-04-04', '2019-04-04 11:38:48', '2019-04-04 11:38:48', 3)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:18
+Completed 200 OK in 17ms (Views: 1.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/v1/posts/?page=1" for 37.201.225.183 at 2019-04-04 13:38:48 +0200
+Cannot render console from 37.201.225.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY name asc[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` ORDER BY name asc LIMIT 2 OFFSET 0[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:7
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 54.86.23.43 at 2019-04-04 13:38:56 +0200
+Cannot render console from 54.86.23.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DashboardController#index as */*
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 129ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 183.82.246.28 at 2019-04-04 13:43:46 +0200
+Cannot render console from 183.82.246.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 304ms (Views: 302.2ms | ActiveRecord: 0.0ms)
+
+

@@ -22,6 +22,7 @@ constructor(props) {
     this.handleUpdateRecord = this.handleUpdateRecord.bind(this);
     this.loadData = this.loadData.bind(this);
     this.handlePageChange = this.handlePageChange.bind(this);
+    this.getPostData = this.getPostData.bind(this);
    }
   
   
@@ -80,17 +81,26 @@ handleDeleteRecord(post_id)
 
 handleAdd(post)
 {
-	 var posts = this.state.posts;
-     posts.push(post);
-     this.setState({ posts: posts });
+	 this.getPostData();
 }
 
+    
 componentDidMount(){
     /*fetch('/posts.json')
       .then((response) => {return response.json()})
       .then((data) => {this.setState({ posts: data }) });  */
      
-    var self = this;
+    this.getPostData();
+      
+    fetch('/api/v1/categories.json')
+      .then((response) => {return response.json()})
+      .then((data) => {this.setState({ categories: data }) });
+      
+  }
+  
+  getPostData()
+  {
+  	var self = this;
     $.ajax({
       url: '/api/v1/posts/',
       data: { page: self.state.activePage },
@@ -107,12 +117,6 @@ componentDidMount(){
         alert('Cannot get data from POSTS Controller: ', error);
       }
 });
-      
-    fetch('/api/v1/categories.json')
-      .then((response) => {return response.json()})
-      .then((data) => {this.setState({ categories: data }) });
-      
-      
   }
   
   loadData()
